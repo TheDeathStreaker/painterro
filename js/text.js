@@ -90,9 +90,9 @@ export default class TextTool {
   setFont(font) {
     this.font = font;
     this.input.style['font-family'] = font;
-    if (this.active) {
-      this.input.focus();
-    }
+    // if (this.active) {
+    //   this.input.focus();
+    // }
     if (this.active) {
       this.reLimit();
     }
@@ -111,9 +111,9 @@ export default class TextTool {
       this.input.style['font-style'] = 'normal';
     }
 
-    if (this.active) {
-      this.input.focus();
-    }
+    // if (this.active) {
+    //   this.input.focus();
+    // }
     if (this.active) {
       this.reLimit();
     }
@@ -133,9 +133,9 @@ export default class TextTool {
   setFontStrokeSize(size) {
     this.fontStrokeSize = size;
     this.input.style['-webkit-text-stroke'] = `${this.fontStrokeSize}px ${this.strokeColor}`;
-    if (this.active) {
-      this.input.focus();
-    }
+    // if (this.active) {
+    //   this.input.focus();
+    // }
     if (this.active) {
       this.reLimit();
     }
@@ -194,7 +194,7 @@ export default class TextTool {
       this.inputWrapper.style.left = `${this.crd[0]}px`;
       this.inputWrapper.style.top = `${this.crd[1]}px`;
       this.inputWrapper.style.display = 'inline';
-      this.input.focus();
+      // this.input.focus();
       this.reLimit();
       this.input.onkeydown = (e) => {
         if (e.ctrlKey && e.keyCode === KEYS.enter) {
